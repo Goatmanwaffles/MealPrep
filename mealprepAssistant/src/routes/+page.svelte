@@ -1,12 +1,12 @@
 <script lang="ts">
-
+import Card from '$lib/components/+card.svelte'
+import NavButton from '$lib/components/+navButton.svelte'
 </script>
 
 <h1 class="flex justify-center mt-8 ">MealPrep Assistant</h1>
 
 <!-- Login Box-->
-<div class="flex justify-center justify-content-center bg-gray-400 rounded-xl flex-col">
-    <h2>Login</h2>
+<Card title={"Login"}>
     <form class="flex flex-col" method="POST">
         <label for="email">Enter your Email</label>
         <input type="email">
@@ -16,4 +16,11 @@
 
         <input type="submit">
     </form>
-</div>
+</Card>
+
+    <Card title={"Test"} subtitle={"Test2"}>
+        <p>This is a child</p>
+    </Card>
+
+<NavButton content="Hello" nav="/">
+</NavButton>
